@@ -5,7 +5,8 @@ function BotCollection({ bots, setBotArmy }) {
   // Your code here
 
   function handleCardClick(previousArmy){
-    // console.log(previousArmy)
+    console.log(previousArmy)
+    // setBotArmy(previousArmy)
     return [...previousArmy, bots]
     
   }

@@ -3,15 +3,15 @@ import BotCard from './BotCard';
 
 function YourBotArmy({ botArmy, handleCardClick }) {
   //your bot army code here...
-  const botArmyList = botArmy.map(item => {
-    return <BotCard key={botArmy.id} botArmy={botArmy} handleCardClick={handleCardClick}/>
+  const botArmyCard = botArmy.map(item => {
+    return <BotCard key={item.id} item={item} handleCardClick={handleCardClick}/>
   })
 
   return (
     <div className="ui segment inverted olive bot-army">
       <div className="ui five column grid">
         <div className="row bot-army-row">
-          {botArmyList}
+          {botArmyCard}
           Your Bot Army
         </div>
       </div>
